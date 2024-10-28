@@ -1,9 +1,9 @@
 # SRBMiner-Multi-Docker
 
-Docker containing SRBMiner-Multi 2.6.9
+Docker containing newest SRBMiner-Multi 2.6.9
 
-Download :
-https://boredmates.de/srbminer
+Download:<br/>
+https://boredmates.de/srbminer<br/>
 https://hub.docker.com/r/boredmates/srbminer-multi-docker
 
 SRBMiner-Multi is a cryptocurrency miner with CPU and AMD & NVIDIA & INTEL GPU support. You can mine up to 4 different algorithms/coins at the same time.
@@ -37,6 +37,8 @@ Press `CTRL+C` to stop the container, and it will be automatically removed. Alte
 
 ## Custom Configuration
 
+In order to provide your own configuration, start the container with extra parameters:
+
 ```bash
 docker run --rm -it --name=my-srbminer srbminer-multi-docker 
 --algorithm randomx \
@@ -53,7 +55,7 @@ The parameters should be self-explanatory, but for a reference:
 |---|---|---|
 | --algorithm | One or more algorithms you want to mine. | randomx |
 | --pool | URL and the port of the pool you want to use, most pools have a Getting Started page with this information. | fr-zephyr.miningocean.org:5342 |
-| --wallet | Wallet address you want to mine to at the pool. | ZEPHYR2efUaEbchEZGVhgW63veURr9s4BTQJEpCUCvKfSFgqfV4mrb4cKwL2JxkufffAZ5LfgVE7sfpoSX79wYueZryzpNNdPCx2A |
+| --wallet | Wallet address you want to mine to at the pool. | ZEPHYR2efUaEbchEZGVhgW63veURr9s4BTQJ... |
 | --password | Password, or at some pools used as the worker name for the pool dashboard | x |
 | --cpu-threads-priority |  Number between 1 (idle) and 5 (highest) of the CPU process priority, default is 2  | 4 |
 | --cpu-threads |  Number of threads to use on the CPU | 2 |
@@ -63,8 +65,9 @@ The compact version of the same is:
 docker run --rm -it --name=my-srbminer srbminer-multi-docker -o fr-zephyr.miningocean.org:5342 -a randomx -u ZEPHYR2efUaEbchEZGVhgW63veURr9s4BTQJEpCUCvKfSFgqfV4mrb4cKwL2JxkufffAZ5LfgVE7sfpoSX79wYueZryzpNNdPCx2A -p x --cpu-threads-priority 4 --cpu-threads 2
 ```
 
-We recommend taking a look at Github from SRBMiner-Multi itself, it has all relevant information about coins and parameters:
-https://github.com/doktor83/SRBMiner-Multi
-Full documentation on SRBMiner-Multi at: https://github.com/doktor83/SRBMiner-Multi
+We recommend taking a look at the full documentation at SRBMiner-Multi's Github itself, it has all relevant information about coins and parameters:<br/>
+https://github.com/doktor83/SRBMiner-Multi<br/>
+Parameters:<br/>
+https://github.com/doktor83/SRBMiner-Multi/blob/master/Parameters<br/>
 
 If you have questions, feel free to reach out to us at info@boredmates.com
