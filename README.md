@@ -3,7 +3,7 @@
 Docker containing newest SRBMiner-Multi 2.6.9
 
 Download:<br/>
-https://boredmates.de/srbminer<br/>
+https://boredmates.de/pages/srbminer-multi-docker<br/>
 https://hub.docker.com/r/boredmates/srbminer-multi-docker
 
 SRBMiner-Multi is a cryptocurrency miner with CPU and AMD & NVIDIA & INTEL GPU support. You can mine up to 4 different algorithms/coins at the same time.
