@@ -40,7 +40,7 @@ Press `CTRL+C` to stop the container, and it will be automatically removed. Alte
 In order to provide your own configuration, start the container with extra parameters:
 
 ```bash
-docker run --rm -it --name=my-srbminer srbminer-multi-docker 
+docker run --rm -it --name=my-srbminer boredmates/srbminer-multi-docker 
 --algorithm randomx \
 --pool fr-zephyr.miningocean.org:5342 \
 --wallet ZEPHYR2efUaEbchEZGVhgW63veURr9s4BTQJEpCUCvKfSFgqfV4mrb4cKwL2JxkufffAZ5LfgVE7sfpoSX79wYueZryzpNNdPCx2A \
@@ -62,7 +62,7 @@ The parameters should be self-explanatory, but for a reference:
 
 The compact version of the same is:
 ```bash
-docker run --rm -it --name=my-srbminer srbminer-multi-docker -o fr-zephyr.miningocean.org:5342 -a randomx -u ZEPHYR2efUaEbchEZGVhgW63veURr9s4BTQJEpCUCvKfSFgqfV4mrb4cKwL2JxkufffAZ5LfgVE7sfpoSX79wYueZryzpNNdPCx2A -p x --cpu-threads-priority 4 --cpu-threads 2
+docker run --rm -it --name=my-srbminer boredmates/srbminer-multi-docker -o fr-zephyr.miningocean.org:5342 -a randomx -u ZEPHYR2efUaEbchEZGVhgW63veURr9s4BTQJEpCUCvKfSFgqfV4mrb4cKwL2JxkufffAZ5LfgVE7sfpoSX79wYueZryzpNNdPCx2A -p x --cpu-threads-priority 4 --cpu-threads 2
 ```
 
 We recommend taking a look at the full documentation at SRBMiner-Multi's Github itself, it has all relevant information about coins and parameters:<br/>
