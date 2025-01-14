@@ -4,8 +4,8 @@ cd /srbminer
 
 # Our default configuration
 ALGORITHMS="randomx"
-POOL="us-zephyr.miningocean.org:5342"
-WALLET="ZEPHYR2efUaEbchEZGVhgW63veURr9s4BTQJEpCUCvKfSFgqfV4mrb4cKwL2JxkufffAZ5LfgVE7sfpoSX79wYueZryzpNNdPCx2A"
+POOL="randomx.rplant.xyz:17130"
+WALLET="SaLvdX4AtFaJ8mowi5pQKz87vejhLW9B63jYMVgBiZA3FaWucRYV72X9nEhGYRGi71ZzXt8Tu4Xn4AqfAK4CY9YYQnAh6pWw1zY"
 
 # We check if we run blank without any arguments, in which case our default configuration is applied
 if [ $# -eq 0 ] ; then
